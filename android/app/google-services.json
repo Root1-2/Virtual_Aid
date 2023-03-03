@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367952419369",
+    "project_id": "hgsae-67192",
+    "storage_bucket": "hgsae-67192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367952419369:android:6d2b6812cca13c5fdd9a38",
+        "android_client_info": {
+          "package_name": "com.example.ytlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367952419369-6go037snl3qpjt98n4hjgpvsbvqb94g4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmrA4fhiJ_y3bbyQPFtwhC-43quc4dmCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367952419369-6go037snl3qpjt98n4hjgpvsbvqb94g4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
