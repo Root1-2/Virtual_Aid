@@ -16,7 +16,7 @@ class _AddReminderState extends State<AddReminder> {
   TimeOfDay? selectedTime;
   final List<String> days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-  //bool _isWeeklyRepeatOn = false;
+  bool _isWeeklyRepeatOn = false;
 
   final List<bool> _isSelected = List.generate(7, (index) => false);
 
@@ -136,22 +136,22 @@ class _AddReminderState extends State<AddReminder> {
               },
               children: days.map((day) => Text(day)).toList(),
             ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.end,
-            //   children: [
-            //     const Text('Repeat Weekly:'),
-            //     IconButton(
-            //       icon: _isWeeklyRepeatOn
-            //           ? const Icon(Icons.check_box_rounded)
-            //           : const Icon(Icons.square_outlined),
-            //       onPressed: () {
-            //         setState(() {
-            //           _isWeeklyRepeatOn = !_isWeeklyRepeatOn;
-            //         });
-            //       },
-            //     ),
-            //   ],
-            // ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Text('Repeat Weekly:'),
+                IconButton(
+                  icon: _isWeeklyRepeatOn
+                      ? const Icon(Icons.check_box_rounded)
+                      : const Icon(Icons.square_outlined),
+                  onPressed: () {
+                    setState(() {
+                      _isWeeklyRepeatOn = !_isWeeklyRepeatOn;
+                    });
+                  },
+                ),
+              ],
+            ),
             const SizedBox(height: 16),
             Padding(
               padding: const EdgeInsets.all(40.0),
